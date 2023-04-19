@@ -1,0 +1,29 @@
+{
+  "name": "www-goodbye",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier -w .",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack",
+    "dev": "webpack serve"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.3",
+    "cssnano": "^6.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "mini-css-extract-plugin": "^2.7.5",
+    "postcss-loader": "^7.2.4",
+    "prettier": "^2.8.7",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.15",
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,58 @@
+@import '~normalize.css/normalize.css';
+@import '~@fontsource/inter/latin-400.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bg {
+  width: 100vw;
+  min-height: 100vh;
+  background: #0a1210 url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  align-items: flex-end;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.content {
+  padding: 24px;
+  background-image: linear-gradient(to top, #121212, transparent 80%);
+  color: #fff;
+  text-align: center;
+
+  .logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    aspect-ratio: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+  }
+
+  .announce {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .announce > span {
+    background: rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+    padding: 16px 24px;
+    border-radius: 16px;
+    font-size: 1.125em;
+  }
+}
