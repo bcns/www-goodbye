@@ -55,4 +55,14 @@
     border-radius: 16px;
     font-size: 1.125em;
   }
+
+  .announce a {
+    &,
+    &:hover,
+    &:active,
+    &:visited {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
 }
